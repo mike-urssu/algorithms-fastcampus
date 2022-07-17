@@ -13,4 +13,13 @@ fun main() {
         println("  Sorted List: $numbers")
         println()
     }
+
+    run {
+        println("Selection Sort")
+        val numbers = RandomNumberGenerator.generateNumbers(sizeOfList)
+        println("Unsorted List: $numbers")
+        SelectionSort(numbers).sort()
+        println("  Sorted List: $numbers")
+        println()
+    }
 }
